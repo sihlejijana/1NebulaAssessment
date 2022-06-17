@@ -34,6 +34,58 @@ Please see the attached images **(DBCode, DBNumberofTicketsSold, TicketsTable, M
 }
 ```
 ### Question 2
+```c#
+ public class Animal
+    {
+        public string Eat()
+        {
+            return "Yummy";
+        }
+
+        public virtual string MakeNoise()
+        {
+            return "Durrr";
+        }
+    }
+    
+    class Horse : Animal
+    {
+    
+    	public Horse()
+        {
+        	Animal = new Horse();
+        }
+        
+        public override void Eat()
+        {
+            Console.WriteLine("Yummy");
+        }
+
+        public override void MakeNoise()
+        {
+            Console.WriteLine ("Neigh");
+        }
+    }
+    
+    class Sheep : Animal
+    {
+    
+    	public Sheep()
+        {
+        	Animal = new Sheep();
+        }
+        
+        public override void Eat()
+        {
+           Console.WriteLine ("Yummy");
+        }
+
+        public override void MakeNoise()
+        {
+            Console.WriteLine ("Baaah");
+        }
+     }
+```
 
 ## Front-end Code Challenges
 ### Question 1
