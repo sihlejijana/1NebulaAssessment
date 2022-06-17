@@ -1,7 +1,7 @@
 # 1NebulaAssessment
 ## Database Challenges
 ### Question 1
-The ERD can be improved by removing repeating groups in the Employee table. This repeating group is the address information. Next, I can identify the primary key for the new entity.
+The ERD can be improved by changing it to First Normal Form (1NF) where I remove repeating groups in the Employee table. This repeating group is the address information. I can name the new entity as EmployeeAddress. Next, I can identify the primary key for EmployeeAddress which will be AddressId. The Employee entity is now in 1NF with the repeating group removed.
 
 ### Question 2
 
