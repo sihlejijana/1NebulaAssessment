@@ -129,6 +129,69 @@ element.style.backgroundColor = "pink";
 
 </script>
 ```
-3.
+3. Please see code snippet below:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#secondDiv {
+  background-color: orange;
+}
+
+div {
+  height: 150px;
+  width: 150px;
+  background: green;
+}
+
+.red-card {
+  background: red;
+}
+
+.yellow-card {
+  background: yellow;
+}
+
+</style>
+</head>
+<body>
+
+<div id="firstDiv" class="red-card">
+ <h1>First div</h1>
+</div>
+
+<div id="secondDiv" class="red-card">
+ <p>Second div<p>
+ <button onclick="addCard()">Add Yellow Card</button>
+</div>
+
+</body>
+</html>
+```
+
+```script
+<script>
+
+function addCard(){
+	var element = document.getElementById("secondDiv");
+    element.classList.add("yellow-card");
+}
+
+</script>
+```
 
 ### Question 2
+1. The function will be parsed correctly because the x variable is declared at the bottom, despite its bad syntax.
+2. To avoid this behavior you’d have to use the “use strict”; Syntax. Or in other words, known as the Strict Mode. In Strict Mode, using a variable without declaring it first will result in an error.
+
+Here’s how the Strict Mode would be applied in the given code:
+
+```script
+“use strict”;
+function legal(x) {
+    console.log(x);
+    var x;
+}
+```
